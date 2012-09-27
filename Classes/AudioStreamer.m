@@ -649,7 +649,7 @@ void ASReadStreamCallBack
 		if (fileLength > 0 && seekByteOffset > 0)
 		{
 			CFHTTPMessageSetHeaderFieldValue(message, CFSTR("Range"),
-				(CFStringRef)[NSString stringWithFormat:@"bytes=%ld-%ld", seekByteOffset, fileLength]);
+				(CFStringRef)[NSString stringWithFormat:@"bytes=%d-%d", seekByteOffset, fileLength]);
 			discontinuous = YES;
 		}
 		

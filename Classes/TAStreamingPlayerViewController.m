@@ -204,6 +204,7 @@
 		pv.delegate = self;
 		pv.showsSelectionIndicator = YES;
 		[self.view addSubview:pv];
+        [streamTitle setHidden:YES];
 	
 	} else {
 		streamTitle.text = [[self.streams objectAtIndex:0] objectAtIndex:1];
